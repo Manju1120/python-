@@ -1,0 +1,452 @@
+1).to accept a number and verify given number is even or odd?
+
+num=int(input("enter any number:"))
+
+if num%2==0:
+
+    print("the given number is even")
+
+else:
+
+    print("the given number is odd")
+OUTPUT:
+enter any number:4
+
+the given number is even
+
+
+2)to accept a year and verify given year is leap year or not?
+
+num=int(input("enter a year:"))
+
+if num%4==0:
+
+    print("teh given year is leap")
+
+else:
+
+    print("the given year is not leap")
+
+OUTPUT:
+enter a year:
+
+2024
+the given year is leap
+
+3).to accept a number and verify the given number is in between 100 to 200?
+
+num=int(input("enter any number:"))
+
+if num>=100 and num<=200:
+
+    print("the given number is within the range")
+
+else:
+
+    print("the given number is not within the range")
+
+OUTPUT:
+enter any number:150
+
+the given number is within the range
+
+
+4).to accept two number and find biggest among two numbers?
+
+Num1=int(input("enter first number:"))
+
+num2=int(input("enter second number:"))
+
+if num1<=num2:
+
+    print("the given number is bigger number")
+
+else:
+
+    print("the given number is small number")
+OUTPUT:
+enter first number:20
+
+enter second number:40
+the given number is bigger number
+
+
+
+IF ELIF ELSE:
+
+5).name=input("enter your choice:")
+
+if name=="manju":
+
+    print("it is my name")
+
+elif name=="pavi":
+
+    print("it is my sister name")
+
+elif name=="mahi":
+ 
+   print("it is my friend name")
+
+else:
+
+    print("other names are not recommended")
+
+OUTPUT:
+enter your choice:vasanthi
+
+other names are not recOMMENDED
+
+FOR LOOP:
+1)to print numbers from 1 to 6 using for loop:
+for x in range(1,6):
+ 
+   print(x)
+output:
+12345
+2)to print numbers from 5 to 1?
+for x in range(5,0,-1):
+
+      print(x)
+op:5
+4
+3
+2
+1
+
+
+3)to print numbers from 0to 6 and except 3 and 5:
+for x in range(7):
+
+  if x!=3 and x!=5:
+
+    print(x)
+
+op:0
+1
+2
+4
+6
+5)to accept list and print the list element and also find the sum?
+list= eval(input("enter some list element"))
+
+sum=0
+for x in list:
+
+    print(x)
+
+    sum=sum+x
+ 
+   print("the sum value:",sum)
+op:
+6)to accept a number and print multiplication table of a given number?
+n=int(input("enter any number"))
+
+for x in range(1,11):
+ 
+   print(n,"*",x,"=",n*x)
+op:4 * 1 = 4
+4 * 2 = 8
+4 * 3 = 12
+4 * 4 = 16
+4 * 5 = 20
+4 * 6 = 24
+4 * 7 = 28
+4 * 8 = 32
+4 * 9 = 36
+4 * 10 = 40
+
+7)to find those mnumbers are not divisible by 7&multiplies of 5 in b/w 1to100?
+n=int(input("enter any number"))
+
+for x in range(1,n+1):
+
+    if x%7==0 and x%5==0:
+
+        print(x)
+op:enter any number200
+
+35 
+70
+ 105 
+140
+ 175 
+8)to count even numbers and odd numbers of a given series of numbers ?
+n=input("enter some numbers:").split()
+
+i=0
+
+j=0
+
+for x in n:
+ 
+   x=int(x)
+
+    if x%2==0:
+
+        i=i+1
+ 
+   else:
+       j=j+1
+ 
+       print("even numbers count is:",i)
+
+        print("odd numbers count is:",j)
+op: enter some numbers:1 2 3 4 5 6 7
+even numbers :2 4 6
+odd numbers:1 3 5 7
+
+
+9)n1=int(input("enter first number:"))
+
+n2=int(input("enter second number:"))
+
+if n1<n2:
+ 
+   sum=n1+n2
+ 
+   print("the sum is:",sum)
+
+else:
+ 
+       sub=n1-n2
+
+        print("sub is :",sub)
+op:nter first number:10
+
+enter second number:5
+
+sub is : 5
+
+
+10)to accept 4 integer numbers &five among 4 integer number which is smallerone by using if statement?
+
+n1=int(input("enter first number:"))
+
+n2=int(input("enter second number:"))
+
+n3=int(input("enter third number:"))
+
+n4=int(input("enter fourth number:"))
+ 
+print("min(n1,n2,n3,n4)")
+enter first number:10
+
+enter second number:20
+
+enter third number:30
+
+enter fourth number:40
+the smaller number is :1
+11)
+sum=0
+
+for x in range(10,1,-1):
+
+    if x%2!=0:
+ 
+      sum=sum+x
+ 
+   print("the sum is:",sum)
+op: sum is: 0
+
+the sum is: 9
+
+the sum is: 9
+
+the sum is: 16
+
+the sum is: 16
+
+the sum is: 21
+
+the sum is: 21
+
+the sum is: 24
+
+the sum is: 24
+WHILE LOOP:
+12)i=1
+
+while i<=10:
+
+    print(i)
+
+    i=i+1
+
+OP:
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+n=int(input("enter a number:"))
+
+dup=n
+
+sum=0
+
+while n>0:
+ 
+   n=n/10
+ 
+   if dup==sum:
+
+        print("the given number is polyndrome")
+
+    else: 
+
+        print("the given number is not polyndrome")
+
+13)
+n=int(input("enter a number:"))
+
+dup=n
+
+sum=0
+
+while n>0:
+
+    rem=n%10
+
+    sum=sum+(rem**3)
+ 
+   n=n//10
+
+    if dup==sum:
+
+        print("the given number is armstrong")
+
+    else:
+ 
+       print("teh given number is not armstrong")
+OUTPUT:enter a number:153
+
+the given number is not armstrong
+
+the given number is not armstrong
+
+the given number is armstrong
+
+
+14)for x in range(1,10):
+ 
+   if x==5:
+
+        continue
+ 
+   if x==8:
+
+        break
+
+    print(x)
+OUTPUT:
+1
+2
+3
+4
+6
+7
+
+
+LIST TYPES:
+
+l=[10,20,30,40,50]
+
+print(l)
+
+print(id(l))
+
+l[0]=80
+
+print(l)
+
+print(id(l))
+OUTPUT:
+
+1)
+
+a=10
+
+b=20.5
+c="python"
+
+d=30+40j
+
+e=True
+
+ls=[a,b,c,d,e]
+
+print(ls)
+
+print(type(ls))
+
+OUTPUT:
+[10, 20.5, 'python', (30+40j), True]
+
+<class 'list'>
+
+2)
+s=input("enter any string")
+
+print(s.split())
+
+OUTPUT:
+enter any string
+python is a programming language
+
+['python', 'is', 'a', 'programming', 'language']
+
+
+3)
+
+ls=[10,20,True,20.5,"python",0,1,80+90j]
+
+print(ls.count(10))
+
+OUTPUT:
+1
+4)
+
+ls=[10,20.5,"python",True,30+40j]
+
+print(ls)
+
+print(type(ls))
+
+a,b,c,d,e=[10,20.5,"python",True,30+40j]
+
+print(a)
+
+print(b)
+
+print(c)
+
+print(d)
+
+print(e)
+OUTPUT:
+[10, 20.5, "python", True, (30+40j)]
+
+<class 'list'>
+
+10
+
+20.5
+
+python
+
+True
+
+(30+40j)
+
+5)ls=[10,20,True,20.5,"python",0,1,80+90j]
+
+print(ls.count(10))
+OUTPUT:
